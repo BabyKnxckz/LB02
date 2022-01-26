@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --success-color: #00ff00;
+  --error-color: #ff0000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../media/water-g74a834581_1920.jpg");  
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  background-color: rgba(78, 167, 155, 0.616);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
+}
+
+h2, h3 {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  font-size: .75rem;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #c5d377a6;
+  border: 2px solid #c5d37700;
+  border-radius: 4px;
+  color: #141416;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 700;
+}
+
+footer{
+  display: flex;
+  background-color: #141416;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15%;
+  color: #f0f0f0;
+}
+
+footer a{
+color: rgb(182, 182, 182);
+}

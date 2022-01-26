@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/input-form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LB02 Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form id="form" class="form">
+          <h2>Contact form</h2>
+          <div class="form-control">
+            <label for="userName">Username</label>
+            <input type="textarea" id="userName" placeholder="Enter a Username" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="firstName">Firstname</label>
+            <input type="text" id="firstName" placeholder="Enter your Firstname" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="lastName">Lastname</label>
+            <input type="text" id="lastName" placeholder="Enter your lastname" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="jobDescription">Job description</label>
+          <input type="text" id="jobDescription" placeholder="Enter a Job description" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="companyName">Company name</label>
+          <input type="text" id="companyName" placeholder="Enter your Company-Name" />
+          <small>Error message</small>
+        </div>
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone" />
+            <small>Error message</small>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  </main>
+  <footer>
+    <p>Author: Hany Marvin </p>
+    <p>&nbsp &nbsp-&nbsp &nbsp</p>
+    <p><a href="mailto:hanym@bzz.ch">hanym@bzz.ch</a></p>
+  </footer>
+    <script src="script/validate-inputs.js"></script>
+    <script src="script/network.js"></script>
+  </body>
+</html>
